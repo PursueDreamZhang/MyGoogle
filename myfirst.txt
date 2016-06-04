@@ -3,3 +3,4 @@ Git is a free software
 Git is xiugai
 Git is now
 I am one
+i am two
