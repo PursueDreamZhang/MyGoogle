@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/list_item_bg_normal"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <!-- 第一行 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_default" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="你是我的小苹果"
+                    android:textColor="@color/txt_title"
+                    android:textSize="16sp" />
+
+                <RatingBar
+                    android:id="@+id/rb_stars"
+                    style="@android:style/Widget.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="4dp"
+                    android:isIndicator="true"
+                    android:progressDrawable="@drawable/ratingbar_progress" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 第2行 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="下载："
+                android:id="@+id/tv_download_num"
+                android:textColor="@color/txt_small"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="版本："
+                android:id="@+id/tv_version"
+                android:textColor="@color/txt_small"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="日期："
+                android:id="@+id/tv_date"
+                android:textColor="@color/txt_small"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="大小："
+                android:id="@+id/tv_size"
+                android:textColor="@color/txt_small"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
